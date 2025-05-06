@@ -367,9 +367,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <label for="typeRoomInput" class="form-label">Tipo de quarto*</label>
                             <select id="typeRoomInput" class="form-select" aria-label="Tipo de quarto">
                                 <option selected disabled>Selecione</option>
-                                <option value="1">Abc</option>
-                                <option value="2">Def</option>
-                                <option value="3">Ghi</option>
+                                <option value="1">Standard</option>
+                                <option value="2">Suíte</option>
+                                <option value="3">Luxo</option>
                             </select>
                         </div>
                         <div class="mb-3">
