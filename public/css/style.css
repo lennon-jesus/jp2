@@ -36,7 +36,11 @@
   width:90px;
 }
 
-
+.fundo-claro {
+  background-image: url('../img/winnerfachada.jpg');
+  background-color: rgba(255,255,255,0.6);
+  background-blend-mode: lighten;
+}
 
 .navbar{
     font-size:1.1em;

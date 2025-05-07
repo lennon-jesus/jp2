@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         <div class="mb-3">
                             <label for="dateInput" class="form-label">Data de nascimento*</label>
-                            <input type="date" class="form-control" id="dateInput">
+                            <input type="date" class="form-control" id="dateInput" max='2025-01-01'>
                         </div>
                         <div class="mb-3">
                             <label for="payInput" class="form-label">Fiador*</label>
@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         <div class="mb-3">
                             <label for="docInput" class="form-label">Número do Documento*</label>
-                            <input type="number" class="form-control" id="docInput">
+                            <input type="number" class="form-control" id="docInput" min=0>
                         </div>
                         <div class="mb-3">
                             <label for="obsInput" class="form-label">Observações</label>
@@ -381,9 +381,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <?php
                                 foreach ($rooms as $room) {
                                     if ($room['STATUS'] == 0) { ?>
-                                        <option value="1">Quarto <?= $room['NUMERACAO'] ?></option>
+                                        <option value="1" style="color: green">Quarto <?= $room['NUMERACAO'] ?></option>
                                     <?php } else if ($room['STATUS'] == 1) { ?>
-                                            <option value="1" disabled>Quarto <?= $room['NUMERACAO'] ?></option>
+                                            <option value="1" style="color: red" disabled>Quarto <?= $room['NUMERACAO'] ?></option>
                                     <?php }
                                 } ?>
 
