@@ -21,7 +21,7 @@
     <div class="card" style="display: block; margin: auto; margin-top: 3em; width: 45em;">
       <div class="card-body" style="margin:auto; text-align: center">
         <a href="atendimento.php" class="btn btn-light btn-lg" role="button">Atendimento</a>
-        <a href="#" class="btn btn-light btn-lg" role="button">Gerenciamento</a>
+        <a href="gerenciamento.php" class="btn btn-light btn-lg" role="button">Gerenciamento</a>
         <a href="#" class="btn btn-light btn-lg" role="button">Relatórios</a>
         <a href="logout.php" class="btn btn-light btn-lg" role="button"><span
             class="material-symbols-outlined">logout</span> Desconectar</a>
